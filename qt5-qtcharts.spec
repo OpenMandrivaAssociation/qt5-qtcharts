@@ -1,12 +1,12 @@
 %define major 5
 %define libname %mklibname qt5charts %{major}
 %define devname %mklibname qt5charts -d
-%define beta %{nil}
+%define beta beta2
 
 Name:	qt5-qtcharts
-Version: 5.9.2
+Version: 5.10.0
 %if "%{beta}" != "%{nil}"
-Source0: http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%{beta}/submodules/qtcharts-opensource-src-%{version}-%{beta}.tar.xz
+Source0: http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%{beta}/submodules/qtcharts-everywhere-src-%{version}.tar.xz
 Release: 0.%{beta}.1
 %else
 Source0: http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/qtcharts-opensource-src-%{version}.tar.xz
@@ -53,7 +53,7 @@ Example code for the %{name} library
 
 %prep
 %if "%{beta}" != "%{nil}"
-%setup -qn qtcharts-opensource-src-%{version}-%{beta}
+%setup -qn qtcharts-everywhere-src-%{version}
 %else
 %setup -qn qtcharts-opensource-src-%{version}
 %endif
