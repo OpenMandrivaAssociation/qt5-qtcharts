@@ -1,7 +1,7 @@
 %define major 5
 %define libname %mklibname qt5charts %{major}
 %define devname %mklibname qt5charts -d
-%define beta rc1
+%define beta rc2
 
 Name:	qt5-qtcharts
 Version: 5.10.0
