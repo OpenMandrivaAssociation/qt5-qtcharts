@@ -1,3 +1,5 @@
+removed_sources:
+  qtcharts-opensource-src-5.8.0.tar.xz: 2aada94d27f48eb025ae1d195f87bcf3d559c0f6
 sources:
   qtcharts-everywhere-src-5.10.1.tar.xz: c7c91a3f3c45d3959a246661d8ef35dea4f7ae21
-  qtcharts-opensource-src-5.8.0.tar.xz: 2aada94d27f48eb025ae1d195f87bcf3d559c0f6
+  qtcharts-opensource-src-5.9.6.tar.xz: 3e9c17cf040f6057cfdb2e9f121b7d304fabd33f
