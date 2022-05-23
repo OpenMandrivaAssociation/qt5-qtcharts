@@ -4,7 +4,7 @@
 %define beta %{nil}
 
 Name:	qt5-qtcharts
-Version: 5.15.3
+Version: 5.15.4
 %if "%{beta}" != "%{nil}"
 %define qttarballdir qtcharts-everywhere-src-%{version}-%{beta}
 Source0: http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%{beta}/submodules/%{qttarballdir}.tar.xz
@@ -12,7 +12,7 @@ Release: 0.%{beta}.1
 %else
 %define qttarballdir qtcharts-everywhere-opensource-src-%{version}
 Source0: http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/%{qttarballdir}.tar.xz
-Release: 2
+Release: 1
 %endif
 # From KDE
 # [currently no patches]
