@@ -4,7 +4,7 @@
 %define beta %{nil}
 
 Name:	qt5-qtcharts
-Version: 5.15.5
+Version: 5.15.6
 %if "%{beta}" != "%{nil}"
 %define qttarballdir qtcharts-everywhere-src-%{version}-%{beta}
 Source0: http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}-%{beta}/submodules/%{qttarballdir}.tar.xz
@@ -14,8 +14,6 @@ Release: 0.%{beta}.1
 Source0: http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/%{qttarballdir}.tar.xz
 Release: 1
 %endif
-# From KDE
-Patch1000: 0001-Revert-Fix-X-axis-labels-to-not-draw-over-each-other.patch
 Summary: Qt Charts library
 URL: https://github.com/qtproject/qtnetworkauth
 License: LGPL-2.1-with-Qt-Company-Qt-exception-1.1 or LGPL-3.0-with-Qt-Company-Qt-exception-1.1
